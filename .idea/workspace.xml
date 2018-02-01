@@ -84,8 +84,8 @@
       <file leaf-file-name="MenuClick.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/MenuClick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="112" column="83" lean-forward="false" selection-start-line="112" selection-start-column="83" selection-end-line="112" selection-end-column="83" />
+            <state relative-caret-position="228">
+              <caret line="61" column="1" lean-forward="false" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +96,8 @@
       <file leaf-file-name="ProductCheck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/ProductCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="35" column="88" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -728,34 +728,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 46m 24s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 24m 36s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 51m 10s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 25m 59s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 51m 24s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 28m 04s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 52m 02s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 28m 25s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 52m 22s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 30m 01s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 53m 12s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 31m 25s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 57m 11s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 42m 54s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 57m 43s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 12h 45m 10s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 20h 58m 07s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 13h 20m 03s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MenuClick_testMenuClick - 2018.01.31 at 21h 08m 38s.xml">
+    <history-entry file="MenuClick_testMenuClick - 2018.02.01 at 13h 51m 00s.xml">
       <configuration name="MenuClick.testMenuClick" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -805,8 +805,14 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/MenuClick.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -857,6 +863,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/ProductCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="35" column="88" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -865,20 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/ProductCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/MenuClick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="112" column="83" lean-forward="false" selection-start-line="112" selection-start-column="83" selection-end-line="112" selection-end-column="83" />
+        <state relative-caret-position="228">
+          <caret line="61" column="1" lean-forward="false" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
