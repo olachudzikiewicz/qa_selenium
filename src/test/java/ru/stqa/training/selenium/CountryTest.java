@@ -1,5 +1,6 @@
 package ru.stqa.training.selenium;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -32,6 +33,12 @@ public class CountryTest {
     driver.findElement(By.name("username")).sendKeys("admin");
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("login")).click();
+  }
+
+  @After
+  public void stop() {
+    driver.quit();
+    driver = null;
   }
 
   @Test

@@ -1,5 +1,6 @@
 package ru.stqa.training.selenium;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,6 +25,12 @@ public class MenuClick {
     driver = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     wait = new WebDriverWait(driver, 10);
+  }
+
+  @After
+  public void stop() {
+    driver.quit();
+    driver = null;
   }
 
   @Test
