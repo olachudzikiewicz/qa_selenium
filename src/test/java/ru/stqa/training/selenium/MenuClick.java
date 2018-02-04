@@ -34,6 +34,7 @@ public class MenuClick {
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("login")).click();
 
+
     List<WebElement> listToSize = driver.findElements((By.xpath("//ul[@id='box-apps-menu']/li/a")));
     for (int i = 0; i < listToSize.size(); i++) {
       List<WebElement> menuTop = driver.findElements((By.xpath("//ul[@id='box-apps-menu']/li/a")));
