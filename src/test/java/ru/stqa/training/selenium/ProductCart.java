@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElement;
+
 public class ProductCart {
 
   private WebDriver driver;
@@ -38,27 +40,30 @@ public class ProductCart {
     for (int i=0; i<3; i++) {
       List<WebElement> products = driver.findElements(By.xpath("//li[@class='product column shadow hover-light']"));
       products.iterator().next().click();
-      boolean spr = isElementPresent(By.name("options[Size])"));
+      boolean spr = isElementPresent(By.xpath("//select[@name='options[Size]']"));
       if (spr == true)
       {
         driver.findElement(By.xpath("//select[@name='options[Size]']")).click();
-        driver.findElement(By.xpath("//select[@name='options[Size]']/option[@value='Small']")).click();
+        driver.findElement(By.xpath("//select[@name='options[Size]']//option[@value='Small']")).click();
       }
       WebElement cart = driver.findElement(By.xpath("//a[@class='content']//span[@class='quantity'][contains" +
               "(text(),'"+i+"')]"));
       driver.findElement(By.name("add_cart_product")).click();
-      //wait.until(ExpectedConditions.stalenessOf(cart));
-      Thread.sleep(3000);
+      wait.until(textToBePresentInElement(cart,String.format("%s",i+1)));
       driver.findElement(By.className("content")).click();
       driver.findElement(By.id("logotype-wrapper")).click();
     }
     driver.findElement(By.className("content")).click();
 
-    for (int i=0; i<3; i++) {
+    int m=3;
+    for (int i=0; i<m; i++) {
       WebElement row = driver.findElement(By.xpath("//table[@class='dataTable rounded-corners']//strong[contains(text(),'Subtotal:')]"));
-     // WebElement row = rows.get(6);
       driver.findElement(By.xpath("//button[@value='Remove']")).click();
-      wait.until(ExpectedConditions.stalenessOf(row));
+      if (i<m-1) {
+        wait.until(ExpectedConditions.stalenessOf(row));
+      } else {
+        driver.findElement(By.xpath("//div[@id='checkout-cart-wrapper']//a[contains(text(),'<< Back')]")).click();
+      }
     }
 
   }
