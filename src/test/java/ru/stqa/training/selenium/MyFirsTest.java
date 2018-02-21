@@ -1,5 +1,6 @@
 package ru.stqa.training.selenium;
 
+import net.lightbody.bmp.core.har.Har;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,15 +18,15 @@ import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class MyFirsTest {
+public class MyFirsTest extends TestBase  {
 
-  private WebDriver driver;
-  private WebDriverWait wait;
+//  private WebDriver driver;
+//  private WebDriverWait wait;
 
-  @Before
+ /* @Before
   public void start() {
-    driver = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
-   // WebDriver chromeDriver = new ChromeDriver();
+  //  driver = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+    driver = new ChromeDriver();
    // WebDriver ieDriver = new InternetExplorerDriver();
   //  WebDriver firefoxDriver = new FirefoxDriver();
    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //selenium będzie czekać max 10 sek aż się
@@ -36,8 +37,9 @@ public class MyFirsTest {
    /* DesiredCapabilities caps = new DesiredCapabilities();
     caps.setCapability("unexpectedAlertBehaviour", "dismiss");
     WebDriver driver = new ChromeDriver(caps);
-    System.out.println(((HasCapabilities) driver).getCapabilities()); */
-  }
+    System.out.println(((HasCapabilities) driver).getCapabilities());
+    */
+
 
   @Test
   public void myFirstTest() {
@@ -48,10 +50,25 @@ public class MyFirsTest {
   //  wait.until(titleIs("webdriver - Поиск в Google"));
   }
 
-  @After
+  @Test
+  public void getBrowserLogs() {
+    driver.navigate().to("http://selenium2.ru");
+    System.out.println(driver.manage().logs().getAvailableLogTypes());
+    driver.manage().logs().get("browser").forEach(l -> System.out.println(l));
+  }
+
+  @Test
+  public void getBrowserLogsProxy() {
+    proxy.newHar();
+    driver.navigate().to("http://selenium2.ru");
+    Har har = proxy.endHar();
+    har.getLog().getEntries().forEach(l -> System.out.println(l.getResponse().getStatus() + ":" + l.getRequest().getUrl()));
+  }
+
+ /* @After
   public void stop() {
     driver.quit();
     driver = null;
-  }
+  } */
 
 }
