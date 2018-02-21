@@ -86,8 +86,8 @@
       <file leaf-file-name="LogTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/LogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="36">
+              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -784,9 +784,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LogTest_testLogs - 2018.02.21 at 21h 17m 37s.xml">
-      <configuration name="LogTest.testLogs" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LogTest_testLogs - 2018.02.21 at 21h 18m 47s.xml">
       <configuration name="LogTest.testLogs" configurationId="JUnit" />
     </history-entry>
@@ -812,6 +809,9 @@
       <configuration name="LogTest.testLogs" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LogTest_testLogs - 2018.02.21 at 21h 59m 38s.xml">
+      <configuration name="LogTest.testLogs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_testLogs - 2018.02.21 at 22h 06m 49s.xml">
       <configuration name="LogTest.testLogs" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1293,8 +1293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/LogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="36">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

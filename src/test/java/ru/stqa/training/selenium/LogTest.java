@@ -10,31 +10,12 @@ import java.util.List;
 
 public class LogTest extends TestBase {
 
-//  private WebDriver driver;
- // private WebDriverWait wait;
-
- /* @Before
-  public void start() {
-    driver = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
-    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    wait = new WebDriverWait(driver, 10);
-  }
-
-  @After
-  public void stop() {
-    driver.quit();
-    driver = null;
-  } */
-
   @Test
   public void testLogs() {
     login();
 
     driver.findElement(By.xpath("//span[contains(text(),'Catalog')]")).click();
 
-    List<WebElement> listToSize1 = driver.findElements((By.xpath("//tr[@class='row']//td//a")));
-    List<WebElement> listToSize2 = driver.findElements((By.xpath("//tr[@class='row']//input[contains(@name," +
-            "'categories')]")));
     List<WebElement> listToSize = driver.findElements((By.xpath("//tr[@class='row']//td[descendant::*[contains(@class,'folder')]]//a")));
     for (int i = 0; i < listToSize.size(); i++) {
       List<WebElement> catalog = driver.findElements((By.xpath("//tr[@class='row']//td[descendant::*[contains(@class,'folder')]]//a")));
