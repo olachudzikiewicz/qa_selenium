@@ -4,6 +4,7 @@ import net.lightbody.bmp.core.har.Har;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.logging.LogEntry;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,10 +34,12 @@ public class LogTest extends TestBase {
         for (int j = 0; j < products.size(); j++) {
           List<WebElement> products1 = driver.findElements((By.xpath
                   ("//tr[@class='row'][descendant::td[descendant::*[contains(@name,'products')]]]/td[descendant::img]/a")));
-          proxy.newHar();
+        //  proxy.newHar();
           products1.get(j).click();
-          Har har = proxy.endHar();
-          har.getLog().getEntries().forEach(l -> System.out.println(l.getResponse().getStatus() + ":" + l.getRequest().getUrl()));
+         // Har har = proxy.endHar();
+         // har.getLog().getEntries().forEach(l -> System.out.println(l.getResponse().getStatus() + ":" + l.getRequest
+        //          ().getUrl()));
+          driver.manage().logs().get("browser").forEach(l -> System.out.println(l));
           driver.findElement(By.name("cancel")).click();
         }
 
